@@ -15,6 +15,8 @@
             queryParamsHandling="merge"
             [queryParams]="{ launch_year: year }"
             *ngFor="let year of List_of_Years"
+            (click)="clickedButton($event)"
+            type="button"
           >
             {{ year }}
           </button>
@@ -28,6 +30,8 @@
             [routerLink]="['/filter']"
             queryParamsHandling="merge"
             [queryParams]="{ launch_success: true }"
+            (click)="clickedButton($event)"
+            type="button"
           >
             True
           </button>
@@ -36,6 +40,8 @@
             queryParamsHandling="merge"
             [routerLink]="['/filter']"
             [queryParams]="{ launch_success: false }"
+            (click)="clickedButton($event)"
+            type="button"
           >
             False
           </button>
@@ -48,6 +54,8 @@
             queryParamsHandling="merge"
             [routerLink]="['/filter']"
             [queryParams]="{ landing_success: true }"
+            (click)="clickedButton($event)"
+            type="button"
           >
             True
           </button>
@@ -56,6 +64,8 @@
             queryParamsHandling="merge"
             [routerLink]="['/filter']"
             [queryParams]="{ landing_success: false }"
+            (click)="clickedButton($event)"
+            type="button"
           >
             False
           </button>

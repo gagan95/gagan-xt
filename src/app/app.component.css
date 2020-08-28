@@ -22,6 +22,9 @@ footer {
 .horizontal-line {
   margin: 3% 10%;
 }
+button.active {
+  background-color: #7cba01;
+}
 .btn-success {
   background-color: #c5e09b;
   border-style: hidden;
@@ -33,11 +36,11 @@ footer {
   text-decoration: none;
   width: 100px;
 }
-
 button.btn-success:hover {
   background-color: #7cba01;
   cursor: pointer;
 }
+
 .container .filter-menu p {
   text-align: center;
 }
