@@ -25,7 +25,7 @@ const app = express();
 // Compression for Gzip
 app.use(compression());
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 4000;
 const DIST_FOLDER = join(process.cwd(), "dist/browser");
 import compression from "compression";
 
